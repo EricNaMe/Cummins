@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/buttons.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.1.0/js/dataTables.select.min.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
+        <script src="https://rawgit.com/mindmup/editable-table/master/mindmup-editabletable.js"></script>
+        <script src="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/editable/bootstrap-table-editable.js"></script>
+
+
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.0/css/select.bootstrap.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+
+        <link rel="stylesheet" href="css/infantCare.css">
+        <!-- progress bar -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <!-- json serialize -->
+        <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
+
+        <script src="js/infantcare.js"></script>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+        
+        <div class="container" style="background-color:whitesmoke; border:2px;"> 
+        
+        <div class="container" style="position: relative; border-style:solid;
+             background-color: white; width:700px; height: 400px; top:100px;"> 
+        
+ 
+            <div class="container" style="position:absolute; top:20%; left:3%;">        
+  <!-- Fila modulo-->
+                <div class="row">            
+ <div  class="col-xs-3">
+  <label for="Modl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Módulo:</label>
+  <input type="text" class="" id="Modl">
+</div>
+                    
+  <div  class="col-xs-4" >
+  <label for="Porc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;% Módulo:</label>
+  <input type="text" class="" id="Porc">
+</div>
+                    
+           <!-- fin Fila submodulo-->      
+                
+                </div> 
+                
+        <!-- Fila submodulo-->
+                <div class="row" style="margin-top: 30px;">           
+<div class="col-sm-3">
+  <label for="SubMod">SubMódulo:</label>
+  <input type="text" class="" id="SubMod">
+</div>
+                    
+                    
+ <div  class="col-sm-4">
+  <label for="SubPorc">% SubMódulo:</label>
+  <input type="text" class="" id="SubPorc">
+</div>        
+           <!-- FIn Fila submodulo-->          
+             
+                    
+                </div> 
+                
+                <!-- CUADRO DONDE SE INDICAN LOS PORCENTAJES-->
+             <div   style="margin-top: 20px; font-size: 20px; border-style:solid; position:relative; background-color: whitesmoke; height:150px; width:350px;">           
+            
+                 <label style="margin-top: 30px; padding-right: 80px;" for="SubPorc">&nbsp;&nbsp;&nbsp;SubMódulo:  </label>
+                  <label>% Sub</label>
+                  <br>
+                  <label style="padding-right:40px;" for="SubPorc">&nbsp;&nbsp;&nbsp;Partes Infant Care:</label>
+                      <label>15%</label>
+                  <br>
+                  <label style="padding-right: 48px;" for="SubPorc">&nbsp;&nbsp;&nbsp;Partes Teen Care:</label>
+                  <label>85%</label>
+             
+                    
+                </div>          
+          
+                <!-- FIN CUADRO DONDE SE INDICAN LOS PORCENTAJES--> 
+                
+                
+                
+                
+                
+                
+                
+           <!-- Botones añadir eliminar-->      
+               
+       <div  style="position:relative; bottom:230px; left:400px;   margin-top: 70px;">
+<button type="button" style="margin-right: 20px;" class="btn btn-primary btn-md">Añadir</button>
+<button type="button" style="margin-right: 20px;" class="btn btn-primary btn-md">Eliminar</button>
+
+</div> 
+              <!-- fin Botones añadir eliminar-->  
+                
+                
+                
+                
+                
+                
+            </div>   
+ 
+    <!-- Guardar -->  
+ <div id="DivBotones"  style="display:block; position:absolute; top:75%; right: 5%;">
+<button type="button" style="float:right; float:bottom; margin-right: 20px;" class="btn btn-primary btn-md">Salir/Cancelar</button>
+<button type="button" style="float:right; margin-right: 20px;" class="btn btn-primary btn-md">Guardar</button>
+
+</div>
+    <!-- Guardar fin-->  
+        </div>
+        
+        
+        
+        
+        <!--TABLA      -->
+        <div class="container" style="padding-top: 150px; width:700px;">
+            
+  <table class="table table-bordered">
+    <thead>
+      <tr  class="success">
+        <th>Para</th>
+        <th>Matriz Teen Care</th>
+        <th>Ultima Modificación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Planta</td>
+        <td>IS904 EX BUS</td>
+        <td>24/06/2012</td>
+      </tr>
+      <tr>
+        <td>Dealer</td>
+        <td>ISF3.8 MAN</td>
+        <td>24/06/2015</td>
+      </tr>
+      <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+      
+        <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+        <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+        <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        
+         <!--FIN TABLA  TABLA      -->
+ </div> 
+    </body>
+</html>

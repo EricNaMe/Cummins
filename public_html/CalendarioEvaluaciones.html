@@ -1,0 +1,218 @@
+
+<html>
+    <head>
+    
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/buttons.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.1.0/js/dataTables.select.min.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
+        <script src="https://rawgit.com/mindmup/editable-table/master/mindmup-editabletable.js"></script>
+        <script src="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/editable/bootstrap-table-editable.js"></script>
+
+
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.0/css/select.bootstrap.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+
+        <link rel="stylesheet" href="css/infantCare.css">
+        <!-- progress bar -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <!-- json serialize -->
+        <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
+
+        <script src="js/infantcare.js"></script>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+        
+      
+        
+        <div class="container" style="position: relative; border-style:solid;
+             background-color: white;  height: 400px; top:100px; width: 800px;"> 
+        
+ 
+   
+  
+  
+  
+  
+    <!-- Fila modulo-->
+        <div  style="height:50px;border-bottom-style: solid;">            
+
+         
+           <label class="col-xs-2"  for="Modl">Evaluación número:</label>
+           <div class="radio">
+  <label class="col-xs-2"><input type="radio" name="optradio">1</label>
+</div>
+<div class="radio">
+  <label class="col-xs-2"><input type="radio" name="optradio">2</label>
+</div>
+           
+ 
+   
+   <label class="col-xs-1" for="Modl">Tipo:</label>
+   
+   <label class="col-xs-2"><input type="radio" name="optradio">Evaluación</label>
+
+
+  <label class="col-xs-3"><input  type="radio" name="optradio">Pre Evaluación</label>
+</div>
+    
+      <!-- Fila modulo-->
+      
+        <!-- Fila modulo-->
+  
+         <div  style="padding-top: 20px;height:70px;border-bottom-style: solid;">            
+
+         
+           <label class="col-xs-3" for="Modl">Año de evaluación:</label>
+           
+       
+  <select class="col-xs-2" id="sel1">
+    <option>2015</option>
+    <option>2014</option>
+  
+  </select>
+</div>
+        
+          <!-- Fila modulo-->
+  
+            <!-- Fila modulo-->
+       <div  style="padding-top: 20px;height:70px;border-bottom-style: solid;">            
+
+         
+           <label class="col-xs-4" for="Modl">Fecha de inicio de evaluación:</label>
+           
+       
+           <input id="meeting" type="date" value=""/>   
+           <img style="position:relative; left:160px; top:-22px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
+</div>
+            
+              <!-- Fila modulo-->
+              
+              
+              
+                <!-- Fila modulo-->
+       <div  style="padding-top: 20px;height:70px;border-bottom-style: solid;">            
+
+         
+           <label class="col-xs-4" for="Modl">Fecha fin de la evaluación:</label>
+           
+       
+<input id="meeting" type="date" value=""/>
+ <img style="position:relative; left:160px; top:-22px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
+</div>
+            
+              <!-- Fila modulo-->    
+              
+              
+              
+                <!-- Fila modulo-->
+  
+       <div  style="padding-top: 30px;height:60px;">            
+
+       
+           
+           
+       
+    <label class="col-xs-1" for="Modl">Tipo:</label>
+   
+   <label class="col-xs-2"><input type="radio" name="optradio">Activo</label>
+
+
+  <label class="col-xs-2"><input  type="radio" name="optradio">Inactivo</label>
+           
+</div>
+                
+             <!-- Fila modulo-->
+   
+   
+</div>
+  
+  
+  
+                
+                
+        
+ 
+    <!-- Guardar -->  
+ <div id="DivBotones"  style="display:block; position:absolute; top:42%; right: 22%;">
+<button type="button" style=" margin-right: 20px;" class="btn btn-primary btn-md">Generar</button>
+<button type="button" style=" margin-right: 20px;" class="btn btn-primary btn-md">Salir/Cancelar</button>
+
+</div>
+    <!-- Guardar fin-->  
+      
+        
+        
+        
+        
+        <!--TABLA      -->
+        <div class="container" style="padding-top: 150px; width:700px;">
+            
+  <table class="table table-bordered">
+    <thead>
+      <tr  class="success">
+        <th>Para</th>
+        <th>Matriz Teen Care</th>
+        <th>Ultima Modificación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Planta</td>
+        <td>IS904 EX BUS</td>
+        <td>24/06/2012</td>
+      </tr>
+      <tr>
+        <td>Dealer</td>
+        <td>ISF3.8 MAN</td>
+        <td>24/06/2015</td>
+      </tr>
+      <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+      
+        <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+        <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+        <tr>
+        <td>Dealer</td>
+        <td>ISM24505</td>
+        <td>24/06/2015</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        
+         <!--FIN TABLA  TABLA      -->
+ 
+    </body>
+</html>
