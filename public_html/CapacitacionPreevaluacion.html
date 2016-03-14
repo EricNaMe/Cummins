@@ -1,0 +1,231 @@
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/buttons.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.1.0/js/dataTables.select.min.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
+        <script src="https://rawgit.com/mindmup/editable-table/master/mindmup-editabletable.js"></script>
+        <script src="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/editable/bootstrap-table-editable.js"></script>
+
+
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.0/css/select.bootstrap.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+
+        <link rel="stylesheet" href="css/infantCare.css">
+        <!-- progress bar -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <!-- json serialize -->
+        <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
+
+        <script src="js/infantcare.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            body{
+                text-align: center;
+            }
+            .eficiencia-container{
+                display: inline-block;
+                width: 100%;
+                max-width: 1100px;
+                text-align: left;
+            }
+
+            .Evaluacion input{
+                margin-left:-30px;
+                padding:0px;
+            }
+
+            .revision {
+                margin-left:0;
+
+            }
+        </style>
+        <div class="eficiencia-container container-fluid">
+
+            <h1 class="text-center" >Capacitación Preevaluación</h1>
+            <br>
+            <div class="row ">
+
+                <div class="col-xs-6">
+                    <div class="col-sm-3 text-right">
+                        <label for="sel1">DR:</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <select class="form-control" id="sel1">
+                            <option>Cummins Alesso</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-4">
+                    <div class="col-sm-3 text-right">
+                        <label for="sel1">Dealer:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="sel1">
+                            <option>Cummins Alesso</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <h4><b>Tipo: Pre evaluación 2016</b></h4>
+
+
+            <br> <br>
+
+            <style>
+               .tabla1 td{
+                    border: solid; 
+
+                }
+
+               .tabla1 tr{
+                    border:solid;
+                }
+
+
+            </style>
+            <div class="row">
+                <div class="col-lg-12" style="display:inline-block; height:300px;  "  >
+
+                    <table class="table tabla1"  >
+
+                        <tr >
+                            <td rowspan="2" >Motores en los que debes estar certificado</td>    
+                            <td colspan="2" >Técnicos requeridos por motor</td>  
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Motor</td>
+                            <td>Cantidad de técnicas</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>ISL CM850</td>
+                            <td>ISL CM850</td>
+                            <td>ISL CM850</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>ISL CM850</td>
+                            <td>ISL CM850</td>
+                            <td>ISL CM850</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>ISL CM850</td>
+                            <td>ISL CM850</td>
+                            <td>ISL CM850</td>
+
+
+                        </tr>
+
+
+                    </table>
+                </div>
+
+            </div>
+
+            </br> 
+            <h2 class='text-center'>Favor de verificar los siguientes datos</h2>
+            
+                 <div class="col-sm-8">
+                            <div class="col-xs-6">
+                                <label class="" for="usr">¿Cuántos mecánicos tienen?</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text"  class="col-md-2 form-control" id="usr">
+                            </div>
+                        </div>
+            <br></br>
+                 <div class="col-sm-8">
+                            <div class="col-xs-6">
+                                <label class="" for="usr">¿Cuántos ayudantes mecánicos tienen?</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <input type="text"  class="col-md-2 form-control" id="usr">
+                            </div>
+                        </div>
+            
+            
+            
+            <br> </br>     <br> </br>     <br> </br>
+
+            <div class="row">
+
+                <div style="display:inline-block;" class="col-md-12">
+                    <div class="table-responsive" style="height:500px;">
+                        <table class="table table-striped"  data-toggle="table">
+                            <thead>
+                                <tr >
+                                    <th >Motor</th>
+                                    <th >Nombre técnico</th>
+                                    <th >Promotion ID</th>
+                                    <th >Seleccionar una opción</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>ISX04</td>
+                                <td>Pablo</td>
+                                <td >2056</td>
+                                <td>     <button class=" btn-default" type="button"   id="enviar">Verificado</button>      <button class="col-md-offset-4 btn-default" type="button"   id="enviar">Dar de baja</button></td>
+                            </tr>
+                            
+                               <tr>
+                                <td>ISX04</td>
+                                <td>Pablo</td>
+                                <td >2056</td>
+                                <td>     <button class=" btn-default" type="button"   id="enviar">Verificado</button>      <button class="col-md-offset-4 btn-default" type="button"   id="enviar">Dar de baja</button></td>
+                            </tr>
+
+                          
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            
+        </div>
+
+    </body>
+</html>
