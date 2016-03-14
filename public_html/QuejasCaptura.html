@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/buttons.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.1.0/js/dataTables.select.min.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
+        <script src="https://rawgit.com/mindmup/editable-table/master/mindmup-editabletable.js"></script>
+        <script src="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/editable/bootstrap-table-editable.js"></script>
+
+
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.0/css/select.bootstrap.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+
+        <link rel="stylesheet" href="css/infantCare.css">
+        <!-- progress bar -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <!-- json serialize -->
+        <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
+
+        <script src="js/infantcare.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="height:100%; width:100%; position:absolute;">
+
+            <h1 style="font-family: arial; font-size: 18px; font-weight: bold; text-align: center;">Captura de Quejas</h1>
+
+            <div style="top:70px; left:20px; width:300px; height:200px; position:absolute; display:inline-block;"> 
+
+                <div style="position:relative;  top:20px; height:45px; width:300px;" >
+
+
+                    <div class="col-md-9" >
+                        <label style="" class="" for="usr">DR:</label>
+                        <select style="position:relative; width:160px; left:90px; top:-30px;" class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+
+
+                    </div>
+                </div>   
+
+
+                <div style="position:relative;  top:30px; height:45px; width:300px;" >
+
+
+                    <div class="col-md-9" >
+                        <label style="" class="" for="usr">Dealer:</label>
+                        <select style="position:relative; width:160px;left:90px; top:-30px;" class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>  
+
+            </div>
+
+
+            <div  style="padding-bottom: 10px;height:180px;position:absolute; top:90px; left:330px; width:400px;display:inline-block;">            
+
+                <div style="position:relative; padding-bottom: 10px;">
+                    <label class="col-xs-4" for="Modl">Fecha Inicial:</label>
+
+
+                    <input style= "position:relative;  top:0px; width:170px;" id="meeting" class="form-control" type="date" value=""/>
+                    <img style="position:relative; left:320px; top:-25px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
+                </div>    
+                <div style="position:relative; padding-bottom: 10px;">
+                    <label class="col-xs-4" for="Modl">Fecha Final:</label>
+
+
+                    <input style= "position:relative;  top:0px; width:170px;" id="meeting" class="form-control" type="date" value=""/>
+                    <img style="position:relative; left:320px; top:-25px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
+                </div>  
+
+            </div>
+
+
+
+            <div style="position:absolute; display:inline-block; left:700px; top:150px; height:25px; width:300px;"  class="form-group">
+                <label class="col-lg-10" >Revisión:</label>
+
+                <div style="width:200px; position:relative;  left:40px; top:0px; margin: 0px; height: 25px;">
+
+
+                    <div style="width:250px; position:relative; top:-24px; left:50px;"> 
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">1
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">2
+                        </label>
+                    </div> 
+
+                </div>
+
+            </div>
+
+            <div style="position:relative; display:inline-block; left:700px; top:50px; height:25px; width:300px;"  class="form-group">
+                <label class="col-lg-10" >Tipo:</label>
+
+                <div style="width:200px; position:relative;  left:40px; top:0px; margin: 0px; height: 25px;">
+
+
+                    <div style="width:250px; position:relative; top:-24px; left:20px;"> 
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Evaluación
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Pre Evaluación
+                        </label>
+                    </div> 
+
+                </div>
+
+            </div>
+
+            <div style=" height:50px; top:85px; position:relative; left:740px; width:200px;display:inline-block;">
+
+                <label for="sel1">Año:</label>
+                <div style="width:100px; position:relative; top:-30px; left:50px;"> 
+
+                    <select class="form-control" id="sel1">
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                    </select>
+                </div> 
+            </div>
+
+
+            <div  class="table-responsive" style='position: relative;  height: 500px; top:150px; left:0px;'>
+                <div class="container" >
+
+                    <table  class="table table-striped"  data-toggle="table">
+                        <thead>
+                            <tr >
+                                <th >Folio</th>       
+                                <th >Fecha de Creación</th>      
+                                <th >Fecha Queja</th>      
+                                <th  >Cliente (razón social)</th>      
+                                <th >Contacto del cliente</th>      
+                                <th >Queja</th>      
+                                <th >Descripción de la queja</th>      
+                                <th >Seguimiento de la queja</th> 
+                                <th >Reporta</th> 
+                                <th >Soporte (archivo)</th> 
+                                <th >Responsable del seguimiento</th> 
+                                <th >Correo de responsable</th> 
+                                <th >Estatus de la queja</th> 
+                                <th >Fecha de cierre</th> 
+                                <th >Compromisos con el Dealer</th> 
+
+
+                            </tr>
+                        </thead>
+
+            
+                        <tr>
+                            <td>1</td>
+                            <td> <input style= "position:relative;  top:0px; width:150px;" id="meeting" class="form-control" type="date" value=""/></td>
+                            <td><input style= "position:relative;  top:0px; width:150px;" id="meeting" class="form-control" type="date" value=""/></td>
+                            <td><input style="position:relative;  top:0px; width:150px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:160px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td>  <select class="form-control" id="sel1">
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                </select></td>
+                            <td><input style="position:relative;  top:0px; width:170px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:180px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:120px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td></td>
+                            <td><input style="position:relative;  top:0px; width:190px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:170px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td></td>
+                            <td><input style= "position:relative;  top:0px; width:150px;" id="meeting" class="form-control" type="date" value=""/></td>
+                            <td><input style="position:relative;  top:0px; width:190px;" type="text" class="col-md-5 form-control" id="usr"></td>
+
+
+
+                        </tr>
+
+                     
+                        <tr>
+                            <td>1</td>
+                            <td><input style= "position:relative;  top:0px; width:150px;" id="meeting" class="form-control" type="date" value=""/></td>
+                            <td><input style= "position:relative;  top:0px; width:150px;" id="meeting" class="form-control" type="date" value=""/></td>
+                            <td><input style="position:relative;  top:0px; width:150px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:160px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td>  <select class="form-control" id="sel1">
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                </select></td>
+                            <td><input style="position:relative;  top:0px; width:170px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:180px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:120px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td></td>
+                            <td><input style="position:relative;  top:0px; width:190px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td><input style="position:relative;  top:0px; width:170px;" type="text" class="col-md-5 form-control" id="usr"></td>
+                            <td></td>
+                            <td><input style= "position:relative;  top:0px; width:150px;" id="meeting" class="form-control" type="date" value=""/></td>
+                            <td><input style="position:relative;  top:0px; width:190px;" type="text" class="col-md-5 form-control" id="usr"></td>
+
+
+
+                        </tr>
+
+
+                    </table>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </body>
+</html>

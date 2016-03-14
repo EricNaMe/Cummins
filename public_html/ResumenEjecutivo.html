@@ -1,0 +1,179 @@
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.0/js/buttons.bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.1.0/js/dataTables.select.min.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.js"></script>
+        <script src="https://rawgit.com/mindmup/editable-table/master/mindmup-editabletable.js"></script>
+        <script src="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="https://rawgit.com/wenzhixin/bootstrap-table/master/src/extensions/editable/bootstrap-table-editable.js"></script>
+
+
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/wenzhixin/bootstrap-table/master/src/bootstrap-table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.0/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.0/css/select.bootstrap.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+
+        <link rel="stylesheet" href="css/infantCare.css">
+        <!-- progress bar -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <!-- json serialize -->
+        <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
+
+        <script src="js/infantcare.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            body{
+                text-align: center;
+            }
+            .eficiencia-container{
+                display: inline-block;
+                width: 100%;
+                max-width: 1100px;
+                text-align: left;
+            }
+
+            .Evaluacion input{
+                margin-left:-30px;
+                padding:0px;
+            }
+
+            .revision {
+                margin-left:0;
+
+            }
+        </style>
+        <div class="eficiencia-container container-fluid">
+
+            <h1 class="text-center" ><b>Sistema de Certificación de Dealers</b></h1>
+            <h2 class="text-center" >1ra. Evaluación 2016</h2>
+            <h4 class="text-center" >Periodo Evaluado: Del 1ro. De Septiembre de 2015 al 30 de marzo de 2016</h4>
+            <h4 class="text-center">Vigencia del Nivel Obtenido: Hasta nueva evaluación (6 meses aproximadamente)</h4>
+
+
+            <br>   <br>   
+            <h1 class="text-center"><b>KENWORTH DEL BAJÍO SUCURSAL SAN LUIS POTOSÍ</b></h1>
+            <br><br>
+
+            <h4 class="text-left"><b>Nivel de Servicio Obtenido</b></h4>
+
+            <br>
+            <div class="table-responsive" style="height:400px;">
+                <table class="table table-striped "  data-toggle="table">
+
+                    <tr style="background-color:black; border-color:white; color:white;" >
+
+                        <td rowspan="2" >PRODUCTO</td>      
+                        <td rowspan="2" class="text-center" >NIVEL OBTENIDO</td> 
+                        <td rowspan="2" class="text-center"  >PARTES</td> 
+                        <td class="text-center"  colspan="3">HERRAMIENTA </td> 
+
+                        <td class="text-center"  colspan="5" >CAPACITACIÓN</td> 
+                        <td class="text-center" style="text-align: center;"  colspan="2">EFICIENCIA</td> 
+                        <td rowspan="2">QUEJAS</td> 
+
+
+
+                    </tr>
+
+                    <tr style="background-color:black; border-bottom-color: white; border-style: solid; border-color:white; color:white;">
+
+
+
+
+                        <td style="border-style: solid; border-color:white;">Taller</td>
+                        <td >Elec</td>
+                        <td>UsoQSOL</td>
+                        <td colspan="2">Técnicos</td>
+                        <td>Jefe T.</td>
+                        <td>Gte. Serv</td>
+                        <td>Admon. Gtías </td>
+                        <td>Garantías</td>
+                        <td>Rescates</td>
+                      
+
+
+
+
+                    </tr>
+
+                    <tr>
+
+
+
+
+                        <td rowspan="2">ISM CM8716IE</td>
+                        <td rowspan="2">Autorizado</td>
+                        <td style="text-align: center;">90%</td>
+                        <td colspan="3" style="text-align: center;">100%</td>
+                        <td colspan="5" style="text-align: center;">97%%</td>
+                        <td colspan="2" style="text-align: center;">97%</td>
+                        <td rowspan="2"> 95</td>
+                      
+                    
+
+
+
+
+                    </tr>
+                    
+                                   <tr>
+
+
+
+                        <td style="text-align: center;"></td>
+                        <td  style="text-align: center;">100%</td>
+                        <td  style="text-align: center;">97%%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                        <td  style="text-align: center;">97%</td>
+                 
+                        <td ></td>
+                      
+                    
+
+
+
+
+                    </tr>
+                </table>
+
+
+
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
