@@ -11,8 +11,8 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-   <head>
-    
+    <head>
+
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -46,372 +46,365 @@ and open the template in the editor.
         <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
 
         <script src="js/infantcare.js"></script>
-   
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-     
-        
-                    <style>
-tbody {
-  
-}
 
-    </style>
-        
-        
-   <div style=" position:absolute; top:20px; left:80px; height:94%; width:90%;">
-               
-                <h1 style="font-family: arial; font-size: 18px; font-weight: bold; text-align: center;">Evaluación de herramienta electrónica</h1>
-                
-   <div style=' height:100px; position:relative; top:35px;'>            
-                <div style="position:relative; display:inline-block; top:0px; height:75px; width:333px;"  class="form-group">
-            <label class="col-lg-6" >Tipo de evaluación:</label>
-         
-               <div style="width:140px; position:relative;  left:160px; top:0px; margin: 0px; height: 60px;">
-             
-                 
-                 <div style="width:150px; position:relative; top:-27px; left:0px;"> 
-               
+
+        <style>
+            body{
+                text-align: center;
+            }
+            .eficiencia-container{
+                display: inline-block;
+                width: 100%;
+                max-width: 1100px;
+                text-align: left;
+            }
+        </style>  
+
+
+        <div class="eficiencia-container container-fluid">
+
+            <h1 style="font-family: arial; font-size: 18px; text-align:center; font-weight: bold; ">Evaluación de herramienta electrónica</h1>
+
+            <br></br>
+
+
+            <div class="col-xs-4">
+                <div class="col-sm-7 ">
+                    <label for="sel1">Tipo de evaluación:</label>
+                </div>
+                <div class="col-sm-5">
                     <select class="form-control" id="sel1">
                         <option>Evaluación</option>
-                        <option>Pre</option>
-                        
+                        <option>Pre evaluación</option>
+
                     </select>
-                  </div> 
-           
-           
-                
                 </div>
-                
-               </div>
-                
-                
-                      
-        <div style="position:relative;display:inline-block; top:0px; height:75px; width:150px;"  class="form-group">
-            <label class="col-lg-6" >Revisión:</label>
-         
-               <div style="width:50px; position:relative;  left:100px; top:0px; margin: 0px; height: 60px;">
-                
-                     <div style="width:80px; position:relative; top:-27px; left:-15px;"> 
-               
+            </div>
+
+            <div style="margin-left: -15px;" class="col-xs-3">
+                <div class="col-sm-5 ">
+                    <label for="sel1">Revisión:</label>
+                </div>
+                <div style="margin-left:5px;"class="col-sm-5">
                     <select class="form-control" id="sel1">
-                        <option>1era</option>
-                        <option>2da</option>
-                        
+                        <option>1</option>
+                        <option>2</option>
+
                     </select>
-                  </div> 
-                
                 </div>
-                
-        </div>
-                
-                
-            <div style=" height:50px; top:0px; position:relative; left:30px; width:200px;display:inline-block;">
-                 
-                        <label for="sel1">Año:</label>
-                 <div style="width:100px; position:relative; top:-25px; left:45px;"> 
-               
-                     <select disabled class="form-control" id="sel1">
-                        <option>2016</option>
+            </div>
+
+            <div style="margin-left: -15px;" class="col-xs-2">
+                <div class="col-sm-3 ">
+                    <label for="sel1">Año:</label>
+                </div>
+                <div class="col-sm-9">
+                    <select class="form-control" id="sel1">
                         <option>2015</option>
                         <option>2014</option>
-                        <option>2013</option>
-                    </select>
-                  </div> 
-            </div>
-                
-                
-                
-                
-                     <div style="position:relative; left:40px; display:inline-block; top:0px; height:45px; width:280px;" >
-                    
-                    
-                    <div class="col-md-9" >
-                        <label style="" class="" for="usr">Tipo de producto:</label>
-                        <input style="position:relative;width:150px; left:140px; top:-25px;" type="text"  class="col-md-2 form-control" id="usr">
-                    </div>
-                </div> 
-       
-       
-   </div>
-                
-                
-                
-        <div  style="padding-bottom: 10px;height:180px;position:relative; top:50px; left:450px; width:350px;display:inline-block;">            
 
-                <div style="position:relative; padding-bottom: 10px;">
-                     <label class="col-xs-4" for="Modl">Fecha evaluación:</label>
-           
-       
-                     <input style= "position:relative;  top:18px;" id="meeting" type="date" value=""/>
-                     <img style="position:relative; left:160px; top:-5px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
-                </div>    
-                <div style="position:relative; padding-bottom: 10px;">
-                     <label class="col-xs-4" for="Modl">Fecha inicio evaluación:</label>
-           
-       
-                     <input style= "position:relative;  top:18px;" id="meeting" type="date" value=""/>
-                     <img style="position:relative; left:160px; top:-5px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
-                </div>  
-                <div>
-                 <label class="col-xs-4" for="Modl">Fecha fin evaluación:</label>
-           
-       
-                <input style= "position:relative;  top:18px;" id="meeting" type="date" value=""/>
-             
-                <img style="position:relative; left:160px; top:-5px;" class="img-responsive" src="calendar5.png" alt="Chania" width="20" height="20"> 
-                 </div>  
-        </div>
-                
-                
-                
-                
-                        <div style="position:relative; display:inline-block; top:50px; float:left; height:45px; width:333px;" >
-                            <div class="col-md-9" >
-                                <label style="" class="" for="usr">Matriz:</label>
-                                <input style="position:relative; left:50px; top:-30px;" type="text" class="col-md-4 form-control" id="usr">
-                             </div>
-                        </div>   
-            
-    <div style=' position:relative; width:780px; top:-70px;'>            
-        <div> 
-                <div style="position:relative;margin-left: 20px; display:inline-block; top:0px; height:45px; width:333px;" >
-                    
-                    
-                    <div class="col-md-9" >
-                        <label style="" class="" for="usr">DR:</label>
-                        <input style="position:relative; left:30px; top:-30px;" type="text" class="col-md-5 form-control" id="usr">
-                    </div>
-                </div>   
-                
-                
-                   <div style="position:relative;margin-left: 20px; display:inline-block; top:0px; height:45px; width:333px;" >
-                    
-                    
-                    <div class="col-md-9" >
-                        <label style="" class="" for="usr">Código DR:</label>
-                        <input style="position:relative;width:70px; left:170px; top:-5px;" type="text"  class="col-md-2 form-control" id="usr">
-                    </div>
-                </div>  
-                
-        </div>
-                
-                
-                
-                
-            <div>
-                <div style="position:relative;top:0px;display:inline-block;  height:45px; width:333px;" >
-                    
-                    
-                    <div class="col-md-9" >
-                        <label class="" for="usr">Dealer:</label>
-                        <input style="position:relative; left:50px; top:-30px;" type="text" class="col-md-5 form-control" id="usr">
-                    </div>
-                </div>  
-                
-                
-                    <div style="position:relative;margin-left: 30px; display:inline-block; top:-25px; height:45px; width:280px;" >
-                    
-                    
-                    <div class="" >
-                        <label style="" class="" for="usr">Código Dealer:</label>
-                        <input style="position:relative;width:70px; left:195px; top:-5px;" type="text"  class="col-md-2 form-control" id="usr">
-                    </div>
-                </div>  
+                    </select>
+                </div>
             </div>
-                
-                
-   </div>      
-         
-        <div style=' width:300px; position:relative; top:-80px;'>       
-            <div style=" height:50px; top:0px; position:relative; left:18px; width:200px;">
-                 
-                        <label for="sel1">OEM:</label>
-                 <div style="width:100px; position:relative; top:-25px; left:45px;"> 
-               
-                     <select disabled class="form-control" id="sel1">
+
+
+            <div class="col-sm-3">
+                <div class="col-xs-6">
+                    <label class="" for="usr">Tipo de producto:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" class="col-md-5 form-control" id="usr">
+                </div>
+            </div>
+
+            <br></br>  <br></br>
+
+            <div class="col-sm-12">
+                <div class="col-xs-1">
+                    <label class="" for="usr">Matriz:</label>
+                </div>
+                <div class="col-xs-3">
+                    <input type="text" class="col-md-5 form-control" id="usr">
+                </div>
+            </div>
+            <br>  <br><br>
+
+            <div class="col-sm-4">
+                <div class="col-xs-4">
+                    <label class="" for="usr">Dealer:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" class="col-md-5 form-control" id="usr">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="col-xs-6">
+                    <label class="" for="usr">Código Dealer:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text"  class="col-md-2 form-control" id="usr">
+                </div>
+            </div>
+
+            <div class="col-sm-5"> 
+                <div class="col-xs-4">
+                    <label for="Modl">Fecha evaluación:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input id="meeting" class="form-control" type="date" value=""/>
+                </div>
+            </div>
+
+
+
+            <br> <br>   
+
+
+            <div class="col-sm-4">
+                <div class="col-xs-4">
+                    <label class="" for="usr">DR:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" class="col-md-5 form-control" id="usr">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="col-xs-6">
+                    <label class="" for="usr">Código DR:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text"  class="col-md-2 form-control" id="usr">
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="col-xs-4">
+                    <label for="Modl">Fecha inicio evaluación:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input id="meeting" class="form-control" type="date" value=""/>
+                </div>
+            </div>    
+
+
+            <div class="col-sm-4">
+                <div class="col-xs-3">
+                    <label class="" for="usr">OEM:</label>
+                </div>
+                <div class="col-xs-5">
+                    <select class="form-control" id="sel1">
                         <option>DINA</option>
-                     
-                    </select>
-                  </div> 
-            </div>
-                
-            <div style=" height:50px; top:0px; position:relative; left:18px; width:200px;display:inline-block;">
-                 
-                        <label for="sel1">Para:</label>
-                 <div style="width:100px; position:relative; top:-25px; left:45px;"> 
-               
-                     <select  class="form-control" id="sel1">
-                        <option>Dealer</option>
-                       
-                    </select>
-                  </div> 
-            </div>
-  
-        </div>       
-       
-                
-                <div style=" left:700px; position:relative; top:-50px; width:250px;">
-                             <label><a style="font-size: 18px; font-weight: bold; font-family: arial; color:black;">Porcentaje requerido:15%</a></label>
-                        </div>
-                       
-        
+                        <option>2014</option>
 
-                
-  <div class="table-responsive" style='position: relative;  height: 190px; top:-50px; left:-10px;' >
-                    <div class="container" >
- 
-           <table style='' class="table table-striped"  data-toggle="table">
-                    <thead>
-                        <tr >
-                            <th >#</th>       
-                            <th >No. Parte</th>      
-                            <th >No. Parte Anterior</th>      
-                            <th  >Descripción</th>      
-                            <th >Uso</th>      
-                            <th >Cantidad mínima</th>   
-                           
-                            <th >Existencia</th>      
-                            <th >Ponderación</th>      
-                            <th  >Hta Nueva</th>      
-                            <th >Ubicación </th>      
-                            <th >Imagen</th>     
-                        
+                    </select>
+                </div>
+            </div>
+
+            <div style="margin-left:267px;" class="col-sm-5">
+                <div class="col-xs-4">
+                    <label for="Modl">Fecha inicio evaluación:</label>
+                </div>
+                <div class="col-xs-6">
+                    <input id="meeting" class="form-control" type="date" value=""/>
+                </div>
+            </div> 
+            
+            
+            <div class="col-sm-4">
+                <div class="col-xs-3">
+                    <label class="" for="usr">OEM:</label>
+                </div>
+                <div class="col-xs-5">
+                    <select class="form-control" id="sel1">
+                        <option>DINA</option>
+                        <option>2014</option>
+
+                    </select>
+                </div>
+            </div>
+
+
+
+
+
+
+            <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br> <br>   <br>   <br>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div style=" left:700px; position:relative; top:-50px; width:250px;">
+                <label><a style="font-size: 18px; font-weight: bold; font-family: arial; color:black;">Porcentaje requerido:15%</a></label>
+            </div>
+
+
+
+
+            <div class="table-responsive" style='position: relative;  height: 190px; top:-50px; left:-10px;' >
+                <div class="container" >
+
+                    <table style='' class="table table-striped"  data-toggle="table">
+                        <thead>
+                            <tr >
+                                <th >#</th>       
+                                <th >No. Parte</th>      
+                                <th >No. Parte Anterior</th>      
+                                <th  >Descripción</th>      
+                                <th >Uso</th>      
+                                <th >Cantidad mínima</th>   
+
+                                <th >Existencia</th>      
+                                <th >Ponderación</th>      
+                                <th  >Hta Nueva</th>      
+                                <th >Ubicación </th>      
+                                <th >Imagen</th>     
+
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+                            <td></td>
+
+
+
                         </tr>
-                    </thead>
-                    <tr>
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                        
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                        <td></td>
-                        
-                        
-                        
-                    </tr>
-                    
-                    
+
+
                         <tr>
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                      
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                        <td></td>
-                        
-                        
-                        
-                    </tr>
-                    
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+                            <td></td>
+
+
+
+                        </tr>
+
                         <tr>
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                    
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                        <td></td>
-                        
-                        
-                        
-                    </tr>
-                    
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+                            <td></td>
+
+
+
+                        </tr>
+
                         <tr>
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                   
-                        <td>1</td>
-                        <td>ISMX</td>
-                        <td>289332</td>
-                        <td></td>
-                        <td>Sensor </td>
-                        <td></td>
-                        
-                        
-                        
-                    </tr>
-                    
-                    
-                    
-                    
-            </table>
-                      </div>
-                
-                
-                
-                
-         </div> 
-                
-              <div style=' display:inline-block; left:-520px; top:-80px; height:80px; width:300px; position:relative;'>
-  
-                 <div class="form-group">
-                     <label for="comment">Comentario evaluación:</label>
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+
+                            <td>1</td>
+                            <td>ISMX</td>
+                            <td>289332</td>
+                            <td></td>
+                            <td>Sensor </td>
+                            <td></td>
+
+
+
+                        </tr>
+
+
+
+
+                    </table>
+                </div>
+
+
+
+
+            </div> 
+
+            <div style=' display:inline-block; left:-520px; top:-80px; height:80px; width:300px; position:relative;'>
+
+                <div class="form-group">
+                    <label for="comment">Comentario evaluación:</label>
                     <textarea style="position:relative; top:-30px; left:180px;" class="form-control" rows="3" id="comment"></textarea>
                 </div>
-               </div>
-                
-                <div style='position: relative; display:inline-block; top:20px;  left:600px;' class="col-md-6">
-                    <button type="button" class="btn-default"  id="enviar">Calcular</button>
-                </div>
-                
-                
-                
-                 <div style='display:inline-block; width:80px;position: relative;  top:-20px; left:-80px;' >
-                    <div style='width:140px;position: relative;' class="container" >
- 
-           <table class="table table-striped"  data-toggle="table">
-                    <thead>
-                        <tr >
-                            <th >% Obtenido</th>       
-                             
-                        
-                        </tr>
-                    </thead>
-                    
-                    <tr>
-                        <td>1</td>
-                    </tr>    
-                    
-  
-            </table>
-                      </div>
-                
-                
-                
-                
-         </div>
-                
-                
-                 <div style='position: relative; display:inline-block; top:-125px; left:1000px;' class="col-md-6">
-                    <button type="button" class="btn-default"  id="enviar">Guardar</button>
-                </div>
-  
-      
-</div>
+            </div>
 
-      
+            <div style='position: relative; display:inline-block; top:20px;  left:600px;' class="col-md-6">
+                <button type="button" class="btn-default"  id="enviar">Calcular</button>
+            </div>
+
+
+
+            <div style='display:inline-block; width:80px;position: relative;  top:-20px; left:-80px;' >
+                <div style='width:140px;position: relative;' class="container" >
+
+                    <table class="table table-striped"  data-toggle="table">
+                        <thead>
+                            <tr >
+                                <th >% Obtenido</th>       
+
+
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>1</td>
+                        </tr>    
+
+
+                    </table>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div style='position: relative; display:inline-block; top:-125px; left:1000px;' class="col-md-6">
+                <button type="button" class="btn-default"  id="enviar">Guardar</button>
+            </div>
+
+
+        </div>
+
+
     </body>
 </html>

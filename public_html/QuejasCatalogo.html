@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -38,13 +39,35 @@ and open the template in the editor.
 
         <!-- json serialize -->
         <script src="http://cdn.rawgit.com/macek/jquery-serialize-object/master/dist/jquery.serialize-object.min.js"></script>
-
+		<script src="js/quejascatalogo.js"></script>
         <script src="js/infantcare.js"></script>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h4 class="modal-title" id="headerModal">Enviando informacion</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModal" style="display: none">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModalEliminar" style="display: none">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <style>
             body{
                 text-align: center;
@@ -79,7 +102,7 @@ and open the template in the editor.
                         <label class="" for="usr">Quejas:</label>
                     </div>
                     <div class="col-xs-6">
-                        <input type="text" class="col-md-5 form-control" id="usr">
+                        <input type="text" class="col-md-5 form-control" id="queja">
 
                     </div>
                     <div>
@@ -93,100 +116,7 @@ and open the template in the editor.
             </br>
             <div class="row">
                 <div class="table-responsive" >
-
-                    <table class="table table-striped"  data-toggle="table">
-                        <thead>
-                            <tr >
-
-                                <th>#</th> 
-                                <th>Quejas</th>
-                                <th>Ponderación</th> 
-                                <th>Modificar</th> 
-                                <th>Eliminar</th> 
-
-
-                            </tr>
-                        </thead>
-                        <tr>
-
-                            <td>1</td>
-                            <td>Mala reparación y no asume la responsabilidad</td>
-                            <td> 
-                                <input type="text" style="width:100px; display:inline-block" class="form-control" id="usr">
-                                % </td>
-                            <td></td>
-                            <td></td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>2</td>
-                            <td>Mala reparación y no asume la responsabilidad</td>
-                            <td> 
-                                <input type="text" style="width:100px; display:inline-block" class="form-control" id="usr">
-                                % </td>
-                            <td></td>
-                            <td></td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>3</td>
-                            <td>Mala reparación y no asume la responsabilidad</td>
-                            <td> 
-                                <input type="text" style="width:100px; display:inline-block" class="form-control" id="usr">
-                                % </td>
-                            <td></td>
-                            <td></td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>4</td>
-                            <td>Mala reparación y no asume la responsabilidad</td>
-                            <td> 
-                                <input type="text" style="width:100px; display:inline-block" class="form-control" id="usr">
-                                % </td>
-                            <td></td>
-                            <td></td>
-
-
-                        </tr>
-
-                        <tr>
-
-                            <td>5</td>
-                            <td>Mala reparación y no asume la responsabilidad</td>
-                            <td> 
-                                <input type="text" style="width:100px; display:inline-block" class="form-control" id="usr">
-                                % </td>
-                            <td></td>
-                            <td></td>
-
-
-                        </tr>
-
-                        <tr>
-                            <td></td>
-                            <td>Total</td>
-                            <td>100%</td>
-                            
-
-
-
-                        </tr>
-
-
-
-
-
-                    </table>
+                    <table class="table table-striped" id="tableQuejasCatalogo"></table>
                 </div>
 
             </div>
